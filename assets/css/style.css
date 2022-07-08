@@ -1,0 +1,357 @@
+/*CSS Reset / Normalize*/
+/* Hemos disponibilizado el básico de reset de estilos. Si quieren, añadan más informaciones 
+en las secciones señaladas */
+
+:root{
+    /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
+   --color-de-fondo: #F5F5F5;
+   --color-de-link: #000;
+   --color-titulos:#464646;
+   --color-fondo-azul: #d7e5f8;
+   --color-cajas: #f8f4f4;
+   --azul-botones: #2A7AE4;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--color-de-fondo) ;
+    font-family: 'Raleway';
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+ol, 
+ul,
+li {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--color-de-link);
+}
+
+/*Sección Menu*/
+
+section.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: flex-end;
+    height: 10vh;
+    margin: 0px 153px;
+}
+/*cabecera y espacios*/
+header.menu__header{
+   display: flex;
+   justify-content: space-between;
+   font-size: 16px;
+   font-weight: 750px;
+   color: var(--color-titulos);
+}
+/*items del menu*/
+section.menu nav ul.menu__list{
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    width: 750px;
+}
+section.menu nav ul.menu__list li:nth-child(6){
+    color: black;
+    font-weight: 800;
+}
+/*Sección Title*/
+
+section.title{
+    margin: 0 153px;
+    width: 80%;
+    color: var(--color-titulos);
+}
+section.title div.title__div {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: flex-start; 
+}
+/*titulo principal*/
+section.title div.title__container h2{
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 61px;
+}
+/*imagen de perfil*/
+section.title img.title__profile{
+    width: 368px;
+}
+section.title div.title__div div.title__container h3{
+    font-size: 17px;
+    line-height: 23px;
+    width: 600px;
+    margin-bottom: 30px;
+}
+section.title div.title__div div.title__container ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    width: 500px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+
+/*Sección About*/
+section.about{
+    padding: 70px 160px;
+    background-color: var(--color-fondo-azul);
+}
+section.about div.about__container{ 
+    width: 800px;
+}
+section.about h3.about__title{
+    font-size: 40px;
+}
+section.about div.about__container p{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+/*Seccion de skills*/
+section.skills{
+    margin: 64px 100px;
+}
+section.skills h3.skills__title{
+    font-size: 32px;
+    text-align: center;
+}
+section.skills div.skills__line{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+section.skills div.skills__box{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 16px;
+    background-color: var(--color-cajas);
+    margin: 22px 15px 22px 0px;
+    width: 150px;
+    height: 160px;
+}
+section.skills div.skills__box ul{
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--color-titulos);
+}
+
+/*Sección Hobbies*/
+section.hobbies{
+    margin: 64px 100px;
+}
+section.hobbies h3.hobbies__title{
+    font-size: 32px;
+    text-align: center;
+}
+section.hobbies div.hobbies__line{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+section.hobbies div.hobbies__box{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 16px;
+    background-color: var(--color-cajas);
+    margin: 22px 15px 22px 0px;
+    width: 150px;
+    height: 160px;
+}
+section.hobbies div.hobbies__box ul{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--color-titulos);
+}
+
+
+/* Experiencia Académica*/
+section.academic{
+    padding: 64px 0;
+    background-color: var(--color-fondo-azul);
+}
+section.academic h2.academic__title{
+    font-size: 32px;
+    text-align: center;
+}
+section.academic div.academic__courses{
+    display: flex;
+    justify-content: center;
+}
+section.academic div.academic__courses__box{
+    width: 26.6rem;
+    margin: 0 1rem;
+}
+section.academic div.academic__courses__box ul{
+    margin: 32px;
+    padding: 0;
+}
+section.academic div.academic__courses__box ul li{
+    margin: 32px;
+    padding: 0;
+
+}
+div.academic__courses__box ul li.academic__courses__item__img{
+    background-color:  var(--color-cajas) ;
+    padding: 30px;
+    text-align: center;
+    width: 100%;
+    
+
+}
+div.academic__courses__box ul li.academic__courses__item__img img{
+    margin: 50px 0 50px;
+    
+}
+div.academic__courses__box ul li.academic__courses__item__title{
+    font-size: 20px;
+    line-height: 0px;
+    margin: 0;
+}
+div.academic__courses__box ul li.academic__courses__item__subtitle{
+    font-size: 20px;
+    line-height: 0px;
+}
+
+/* experiencia*/
+section.experience{
+    padding: 64px 0px;
+}
+section.experience h2.experience__section__title{
+    text-align: center;
+    font-size: 32px;
+}
+section.experience div.experiencie__box{
+    display: flex;
+    margin: 5rem 5rem;
+    
+}
+section.experience div.reverse{
+    flex-direction: row-reverse;
+
+}
+section.experience div.experiencie__box div.experience__info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1rem;
+}
+section.experience div.experiencie__box div.experience__info h2.experience__title{
+    font-size: 25px;
+    font-weight: 700;
+    margin: 0;
+}
+section.experience div.experiencie__box div.experience__info h3.experience__text{
+    font-weight: 100;
+}
+section.experience div.experiencie__box button.experiencia__botao--repo{
+    padding: 15px;
+    color: var(--azul-botones);
+    border-color: var(--azul-botones);
+    font-size: 20px;
+}
+section.experience div.experiencie__box button.experience__botao--demo{
+    color: var(--color-de-fondo);
+    background-color: var(--azul-botones);
+    padding: 15px;
+    font-size: 20px;
+}
+
+
+section.formcontato{
+    padding: 70px;
+    width: 100%;
+    background-color: var(--color-fondo-azul);
+}
+section.formcontato div.formcontato__contacto{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    
+    
+}
+section.formcontato div.formcontato__contacto div.formcontato__text{
+    margin: 1rem;
+    
+}
+section.formcontato div.formcontato__contacto div.formcontato__text h2{
+    font-size: 32px;
+}
+section.formcontato div.formcontato__contacto div.formcontato__text h3{
+    font-weight: 200;
+}
+section.formcontato div.formcontato__contacto form.formcontato__form{
+    display: flex;
+    flex-direction: column;
+    
+}
+section.formcontato form{
+    width: 70%;
+    
+}
+section.formcontato form input[type=text]{
+    border:1px solid #CCCCCC; 
+    border-radius: 10px;
+}
+section.formcontato div.formcontato__contacto form.formcontato__form textarea.formcontato__textarea{
+    border:1px solid #CCCCCC; 
+    border-radius: 10px;
+    font-size: 25px;
+}
+section.formcontato div.formcontato__contacto form.formcontato__form input.formcontato__input{
+    margin: 5px;
+    height: 40px;
+    font-size: 20px;
+    border:1px solid #CCCCCC; 
+    border-radius: 10px;
+}
+
+section.formcontato div.formcontato__contacto form.formcontato__form button.formcontato__botao{
+    margin: 10px;
+    color: var(--color-de-fondo);
+    background-color:var(--azul-botones);
+    border-color: var(--azul-botones);
+    width: 125px;
+    height: 50px;
+    font-size: 20px;
+}
+
+/*footeer*/
+
+section.footer div.footer__rodape{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 0;
+    font-size: 25px;
+    margin: 10px;
+    
+}
+
+.warnings{
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    color: #B06AB3;
+    padding-top: 20px;
+}
