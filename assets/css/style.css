@@ -334,7 +334,9 @@ section.formcontato div.formcontato__contacto form.formcontato__form button.form
     height: 50px;
     font-size: 20px;
 }
-
+/* #trucazo {
+    opacity: 0;
+} */
 /*footeer*/
 
 section.footer div.footer__rodape{

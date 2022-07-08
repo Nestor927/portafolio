@@ -222,16 +222,20 @@
                 <h2 class="formcontato__title">Contacto</h2>
                 <h3 class="formcontato__subtext">¿Quieres contactarme?</h3>
                 <h3 class="formcontato__subtext">Complete el siguiente formulario y me pondré en contacto con usted lo antes posible. </h3>
-                <form class="formcontato__form" id="form" name="form" action="https://formsubmit.co/nesstor.927@outlook.com" method="POST">
-                    <input class="formcontato__input" id="name" type="text" name="nombre" placeholder="Nombre" >
-                    <input class="formcontato__input" id="email" type="email" name="email" placeholder="E-mail" >
-                    <input class="formcontato__input" id="asunto" type="text" name="asunto" placeholder="Assunto" >
-                    <textarea class="formcontato__textarea" rows="5" cols="40" id="mensagem" name="mensaje" placeholder="Mensaje" ></textarea>
+                <form class="formcontato__form" id="form" name="form" action="">
+                    <input class="formcontato__input" id="name" type="text" name="nombre" required placeholder="Nombre" >
+                    <input class="formcontato__input" id="email" type="email" name="email" required placeholder="E-mail" >
+                    
+                    <textarea class="formcontato__textarea" rows="5" cols="40" id="message" name="message" placeholder="Mensaje" ></textarea>
                     <button type="submit" class="formcontato__botao">Enviar mensaje</button>
-                    <p class="warnings" id="warnings"></p>
-                    <input type="hidden" name="_next" value="">
+
+
+
+                    <p class="warnings" id="warnings"></p> 
+                    <!-- <input type="hidden" name="_next" value=""> -->
                     <!-- <input type="hidden" name="_captcha" value="false"> -->
                 </form>
+                <a href="mailto:nesstor.927@outlook.com" id="trucazo"></a>
             </div>
         </div>
     </section>
@@ -239,7 +243,7 @@
     <!-- Sección de Footer -->
     <section class="footer">
         <div class="footer__rodape">
-            <p>Desarrollado por Fulana de Tal</p>
+            <p>Desarrollado por Nestor EE.S</p>
             <p>2022</p>
         </div>
     </section>

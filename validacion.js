@@ -1,4 +1,16 @@
-//Haz tú validación en javascript acá
+const $form = document.querySelector('#form')
+const $buttonMailto = document.querySelector('#trucazo')
+
+$form.addEventListener('submit', handleSubmit)
+
+function handleSubmit(event) {
+    event.preventDefault()
+    const form = new FormData(this)
+    $buttonMailto.setAttribute('href', `mailto:nesstor.927@outlook.com?subject=nombre ${form.get('name')}  correo ${form.get('email')}&body=${form.get('message')}`)
+    $buttonMailto.click()
+}
+
+/* //Haz tú validación en javascript acá
 const nombre = document.getElementById("name")
 const email = document.getElementById("email")
 const asunto = document.getElementById("asunto")
@@ -32,4 +44,4 @@ form.addEventListener("submit", e=>{
     }else{
         parrafo.innerHTML = "Enviado"
     }
-}) 
+})  */
